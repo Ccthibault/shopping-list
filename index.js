@@ -1,12 +1,3 @@
-$('.shopping-item-controls').on('click', '.shopping-item-delete', function(e) {
-    $(this).closest('li').remove();
-});
-
-$('button[class="shopping-item-toggle"]').on('click', function(e) {
-    $(this).parent().parent().find('.shopping-item').toggleClass('shopping-item__checked')
-})
-
-
 $('button[type="submit"]').on('click', function(e) {
     e.preventDefault();
     const item = $('#shopping-list-entry').val();
@@ -14,11 +5,11 @@ $('button[type="submit"]').on('click', function(e) {
     $('#shopping-list-entry').val('');
 });
 
-// $('.shopping-item-controls').on('click', '.shopping-item-delete', function(e) {
-//     $(this).closest('li').remove();
-// });
+$('.shopping-item-controls').on('click', '.shopping-item-delete', function(e) {
+    $(this).closest('li').remove();
+});
 
-// $('button[class="shopping-item-toggle"]').on('click', function(e) {
-//     $(this).parent().parent().find('.shopping-item').toggleClass('shopping-item__checked')
-// })
+$('button[class="shopping-item-toggle"]').on('click', function(e) {
+    $(this).parent().parent().find('.shopping-item').toggleClass('shopping-item__checked')
+})
 
